@@ -29,7 +29,7 @@
   align-items: center;
 }
 
-.navigation-item {
+.navigation-link {
   font-family: "Open Sans";
   font-weight: 600;
   font-size: 12px;
@@ -37,22 +37,50 @@
   letter-spacing: 0.1em;
   color: #fff;
 }
+.navigation-link:hover,
+.navigation-link:focus {
+  color: $accent-color;
+}
+.menu-tel {
+  display: none;
+}
+.header-btn {
+  display: none;
+}
 
 @media screen and (min-width: 768px) {
-  .navigation-list {
-    display: flex;
-  }
   .logo-link {
     background-image: url(../../images/logoDark.svg);
   }
+
+  .navigation-list {
+    display: flex;
+  }
+
+  .navigation-item {
+    margin-right: 25px;
+  }
+
+  .address {
+    font-style: normal;
+  }
   .menu-tel {
-    color: lawngreen;
+    display: flex;
+    font-family: "Open Sans";
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+    color: #fff;
+  }
+  .header-btn {
+    display: flex;
+    justify-content: center;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .navigation-item {
     margin-right: 40px;
-    color: lawngreen;
   }
 }

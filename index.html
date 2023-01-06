@@ -34,16 +34,24 @@
           <a class="logo-link" href=""></a>
           <nav class="navigation">
             <ul class="navigation-list">
-              <li class="navigation-item">Про нас</li>
-              <li class="navigation-item">Послуги та ціни</li>
-              <li class="navigation-item">Майстри</li>
-              <li class="navigation-item">Контакти</li>
+              <li class="navigation-item">
+                <a class="navigation-link" href="#about">Про нас</a>
+              </li>
+              <li class="navigation-item">
+                <a class="navigation-link" href="#prices">Послуги та ціни</a>
+              </li>
+              <li class="navigation-item">
+                <a class="navigation-link" href="#team">Майстри</a>
+              </li>
+              <li class="navigation-item">
+                <a class="navigation-link" href="#contacts">Контакти</a>
+              </li>
             </ul>
           </nav>
-          <address>
+          <address class="address">
             <a class="menu-tel" href="tel:380441111111">+38 044 111 11 11</a>
           </address>
-          <button class="online-reserve" type="button">Онлайн-запис</button>
+          <button class="btn header-btn" type="button">Онлайн-запис</button>
 
           <button
             class="menu-btn"
@@ -58,23 +66,33 @@
 
         <div class="mobile-menu" data-menu>
           <ul class="mobile-menu-list">
-            <li class="mobile-menu-item">Про нас</li>
-            <li class="mobile-menu-item">Послуги та ціни</li>
-            <li class="mobile-menu-item">Майстри</li>
-            <li class="mobile-menu-item">Контакти</li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="">Про нас</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="">Послуги та ціни</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="">Майстри</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="">Контакти</a>
+            </li>
           </ul>
           <address class="mobile-menu-address">
             <a class="mobile-menu-tel" href="tel:380441111111"
               >+38 044 111 11 11</a
             >
           </address>
-          <button class="mobile-menu-btn" type="button">онлайн-запис</button>
+          <button class="online-reserve-btn-mob" type="button">
+            онлайн-запис
+          </button>
           <ul class="mobile-menu-soc">
             <li class="mobile-menu-soc-item">
-              <a href="">Instagram</a>
+              <a class="mobile-menu-soc-link" href="">Instagram</a>
             </li>
             <li class="mobile-menu-soc-item">
-              <a href="">Youtube</a>
+              <a class="mobile-menu-soc-link" href="">Youtube</a>
             </li>
           </ul>
         </div>
@@ -83,30 +101,32 @@
 
     <!--    HERO    -->
     <main>
-      <section class="side-bar">
+      <section id="side-bar">
         <div class="container">
-          <ul>
-            <li class="menu-soc-item">
-              <a href="">Instagram</a>
-            </li>
-            <li class="menu-soc-item">
-              <a href="">Youtube</a>
-            </li>
-          </ul>
+          <div class="side-bar">
+            <ul>
+              <li class="menu-soc-item">
+                <a href="">Instagram</a>
+              </li>
+              <li class="menu-soc-item">
+                <a href="">Youtube</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
       <section id="hero">
         <div class="container">
           <div class="hero">
-            <p class="title-label" lang="en">A hair salon for men in Kyiv</p>
+            <p class="hero-label" lang="en">A hair salon for men in Kyiv</p>
             <h1 class="hero-title">BarberShop</h1>
-            <p class="title-comment">
+            <p class="hero-comment">
               Ми експерти у модних чоловічих стрижках. Працюємо швидко, обережно
               та зі смаком.
             </p>
             <ul>
-              <li><button type="button">Вперед</button></li>
-              <li><button type="button">Назад</button></li>
+              <li><button class="slide-btn" type="button">Вперед</button></li>
+              <li><button class="slide-btn" type="button">Назад</button></li>
             </ul>
           </div>
         </div>
@@ -114,13 +134,12 @@
     </main>
 
     <!--    MODAL    -->
-
     <!--    ABOUT    -->
 
     <section id="about">
       <div class="container">
-        <div>
-          <ul>
+        <div class="about">
+          <ul class="about-list">
             <li>
               <img
                 src="./images/about-img1-min.jpg"
@@ -134,64 +153,64 @@
               />
             </li>
           </ul>
-          <p>Про нас</p>
-          <h1>Кращий Барбершоп твого міста</h1>
-          <p>
+          <p class="about-label">Про нас</p>
+          <h1 class="about-title">Кращий Барбершоп твого міста</h1>
+          <p class="about-comment">
             Якщо ти хочеш додати в свій образ більше впевненості – тобі точно до
             нас.
           </p>
-          <p>
+          <p class="about-description">
             Ми команда, котра ніколи не зупиняється на досягнутому і жадає змін.
             І коли ти потрапиш до рук нашого майстра, то вже ніколи не зможеш
             бути тим самим. Ми команда, яка завжди з клієнтами "на однієї
             хвилі". Тому ми завжди готові вдосконалити кожного, хто до нас
             приходить!
           </p>
-          <button type="button">онлайн-запис</button>
+          <button class="btn" type="button">онлайн-запис</button>
         </div>
       </div>
     </section>
     <!--    PRICES    -->
     <section id="prices">
       <div class="container">
-        <div>
-          <p>Проведи время в компании лучших мастеров</p>
-          <h2>Ціни та послуги</h2>
-          <ul>
-            <li>
-              <p>Чоловіча стрижка</p>
-              <p>від 300 грн.</p>
+        <div class="prices">
+          <p class="pricese-label">Проведи час у компанії найкращих майстрів</p>
+          <h2 class="prices-title">Ціни та послуги</h2>
+          <ul class="prices-list">
+            <li class="prices-item">
+              <p class="prices-cut">Чоловіча стрижка</p>
+              <p class="prices-price">від 300 грн.</p>
             </li>
-            <li>
-              <p>Стрижка бороди</p>
-              <p>від 200 грн.</p>
+            <li class="prices-item">
+              <p class="prices-cut">Стрижка бороди</p>
+              <p class="prices-price">від 200 грн.</p>
             </li>
-            <li>
-              <p>Стрижка вусів</p>
-              <p>від 200 грн.</p>
+            <li class="prices-item">
+              <p class="prices-cut">Стрижка вусів</p>
+              <p class="prices-price">від 200 грн.</p>
             </li>
-            <li>
-              <p>Гоління небезпечною бритвою</p>
-              <p>від 200 грн.</p>
+            <li class="prices-item">
+              <p class="prices-cut">Гоління небезпечною бритвою</p>
+              <p class="prices-price">від 200 грн.</p>
             </li>
-            <li>
-              <p>Cтрижка у стажера</p>
-              <p>від 50 грн.</p>
+            <li class="prices-item">
+              <p class="prices-cut">Cтрижка у стажера</p>
+              <p class="prices-price">від 50 грн.</p>
             </li>
-            <li>
-              <p>Стрижка під насадку</p>
-              <p>від 200 грн.</p>
+            <li class="prices-item">
+              <p class="prices-cut">Стрижка під насадку</p>
+              <p class="prices-price">від 200 грн.</p>
             </li>
-            <li>
-              <p>Дитяча стрижка (до 12 років)</p>
-              <p>від 300 грн.</p>
+            <li class="prices-item">
+              <p class="prices-cut">Дитяча стрижка (до 12 років)</p>
+              <p class="prices-price">від 300 грн.</p>
             </li>
-            <li>
-              <p>Камуфлювання сивини</p>
-              <p>від 200 грн.</p>
+            <li class="prices-item">
+              <p class="prices-cut">Камуфлювання сивини</p>
+              <p class="prices-price">від 200 грн.</p>
             </li>
           </ul>
-          <button type="button">онлайн-запис</button>
+          <button class="btn reserve-btn" type="button">онлайн-запис</button>
         </div>
       </div>
     </section>
@@ -213,9 +232,9 @@
               <p>100 Подарунків постійним клієнтам</p>
             </li>
           </ul>
-          <p>стара традиційна школа</p>
-          <h2>Чому приходять саме до нас?</h2>
-          <p>
+          <p class="sratistics-label">стара традиційна школа</p>
+          <h2 class="sratistics-title">Чому приходять саме до нас?</h2>
+          <p class="sratistics-comment">
             Про нас говорять тільки хороше. Але краще 1 раз побачити и відчути,
             аніж 10 разів прочитати.
           </p>
@@ -223,11 +242,11 @@
       </div>
     </section>
     <!--    TEAM    -->
-    <section>
+    <section id="team">
       <div class="container">
         <div>
-          <p>для справжніх поціновувачів атмосфери</p>
-          <h2>Наші майстри</h2>
+          <p class="team-label">для справжніх поціновувачів атмосфери</p>
+          <h2 class="team-title">Наші майстри</h2>
           <ul>
             <li>
               <img
@@ -261,8 +280,8 @@
     <section>
       <div class="container">
         <div>
-          <p>Латинською мовою “барба” означає “борода”</p>
-          <h2>Галерея</h2>
+          <p class="gallery-label">Латинською мовою “барба” означає “борода”</p>
+          <h2 class="visually-hidden">Галерея</h2>
           <ul>
             <li>
               <img
@@ -292,15 +311,17 @@
         </div>
       </div>
     </section>
+
     <!--    CONTACTS    -->
-    <section>
+    <section id="contacts">
       <div class="container">
         <div>
           <h2>Онлайн-запис</h2>
+          <button class="btn">Відправити</button>
         </div>
-        <div>
+        <div class="contacts">
           <h2>Контакти</h2>
-          <address>
+          <address class="address">
             <ul>
               <li><a href="">вул. Васильківська, 7А Київ, 08132</a></li>
               <li><a href="tel:380441111111">+38 044 111 11 11</a></li>
@@ -314,6 +335,7 @@
         </div>
       </div>
     </section>
+
     <!--    FOOTER    -->
     <section>
       <div class="container">

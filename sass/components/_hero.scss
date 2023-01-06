@@ -1,9 +1,73 @@
 #hero {
   background: $bg-color-dark;
 }
+.side-bar {
+  display: none;
+}
+
 .hero {
-  padding-top: 112px;
-  padding-right: 143px;
+  padding-top: 208px;
+  padding-right: 0;
   padding-bottom: 183px;
   padding-left: 31px;
+}
+
+.hero-label {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: hsla(227, 20%, 68%, 0.6);
+  margin-bottom: 20px;
+}
+
+.hero-title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.hero-comment {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.02em;
+  color: $text-color-on-dark;
+  width: 306px;
+}
+.slide-btn {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .side-bar {
+    display: flex;
+  }
+
+  .slide-btn {
+    display: flex;
+    background-color: transparent;
+    border: none;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    text-align: right;
+    letter-spacing: 0.1em;
+    color: #ffffff;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-title {
+    font-size: 72px;
+    line-height: 1.18;
+  }
+  .hero-comment {
+    font-size: 18px;
+    line-height: 1.66;
+  }
 }
