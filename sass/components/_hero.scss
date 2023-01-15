@@ -1,25 +1,37 @@
 #hero {
   background: $bg-color-dark;
 }
+
+#hero .container {
+  display: flex;
+}
+
 .side-bar {
+  flex-basis: 94px;
+  background-color: #ffffff;
   display: none;
 }
 
-.hero {
-  padding-top: 208px;
-  padding-right: 0;
-  padding-bottom: 183px;
-  padding-left: 31px;
+.side-bar .soc-link {
+  color: $text-color-main;
 }
 
-.hero-label {
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
+.side-bar .soc-link:hover,
+.side-bar .soc-link:focus {
+  color: $accent-color;
+}
+
+.hero {
+  flex-grow: 1;
+  background: $bg-color-dark;
+  padding-top: 272px;
+  padding-right: 48;
+  padding-bottom: 34px;
+  padding-left: 96px;
+}
+
+.hero .title-label {
   color: hsla(227, 20%, 68%, 0.6);
-  margin-bottom: 20px;
 }
 
 .hero-title {
@@ -36,15 +48,29 @@
   line-height: 1.62;
   letter-spacing: 0.02em;
   color: $text-color-on-dark;
-  width: 306px;
+  min-width: 306px;
 }
+
 .slide-btn {
   display: none;
 }
 
 @media screen and (min-width: 768px) {
+  #hero {
+    background-color: transparent;
+  }
+
+  .hero-comment {
+    margin-bottom: 170px;
+    max-width: 349px;
+  }
+
   .side-bar {
     display: flex;
+  }
+  .slider {
+    display: flex;
+    justify-content: end;
   }
 
   .slide-btn {
@@ -59,6 +85,16 @@
     letter-spacing: 0.1em;
     color: #ffffff;
   }
+  .slide-btn.right {
+    text-align: right;
+  }
+  .slide-btn.left {
+    text-align: left;
+    margin-right: 25px;
+  }
+  .slide-btn.disabled {
+    color: rgba(157, 164, 189, 0.6);
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -69,5 +105,7 @@
   .hero-comment {
     font-size: 18px;
     line-height: 1.66;
+    margin-bottom: 142px;
+    max-width: 400px;
   }
 }

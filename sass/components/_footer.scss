@@ -1,0 +1,25 @@
+.footer {
+  padding: 44px 0;
+}
+
+.copyright {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: $text-color-on-dark;
+}
+.footer .soc-link {
+  color: $text-color-main;
+}
+
+.footer .soc-link:hover,
+.footer .soc-link:focus {
+  color: $accent-color;
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    padding: 56px 0;
+  }
+}

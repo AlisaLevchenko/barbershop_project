@@ -1,12 +1,54 @@
+// #reserve {
+//   background-color: black;
+// }
+
+#contacts {
+  background-color: black;
+}
+
+.reserve {
+  padding: 84px 0;
+  background-color: black;
+}
+
+.reserve .title {
+  color: white;
+}
+
 .contacts {
-  font-size: 18px;
-  line-height: 1.66;
-  letter-spacing: 0.02em;
+  padding: 84px 0;
+  background-color: rgb(49, 49, 49);
+}
+
+.contacts .title {
+  color: white;
 }
 
 .address {
   font-style: normal;
+  font-size: 18px;
+  line-height: 1.66;
+  letter-spacing: 0.02em;
+}
+.address-link {
+  color: $text-color-on-dark;
+}
+.work-time {
+  color: $text-color-on-dark;
 }
 
 @media screen and (min-width: 768px) {
+  .contacts-info {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts-container {
+    display: flex;
+  }
+
+  .contacts-info {
+    display: block;
+  }
 }

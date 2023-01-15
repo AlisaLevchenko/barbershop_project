@@ -48,11 +48,14 @@
               </li>
             </ul>
           </nav>
-          <address class="address">
-            <a class="menu-tel" href="tel:380441111111">+38 044 111 11 11</a>
-          </address>
-          <button class="btn header-btn" type="button">Онлайн-запис</button>
-
+          <div class="header-contact">
+            <address class="address">
+              <a class="address-tel" href="tel:380441111111"
+                >+38 044 111 11 11</a
+              >
+            </address>
+            <button class="btn header-btn" type="button">Онлайн-запис</button>
+          </div>
           <button
             class="menu-btn"
             type="button"
@@ -62,7 +65,7 @@
           ></button>
         </div>
 
-        <!--    mobile-menu    -->
+        <!--    MOBILE-MENU    -->
 
         <div class="mobile-menu" data-menu>
           <ul class="mobile-menu-list">
@@ -99,34 +102,42 @@
       </div>
     </header>
 
-    <!--    HERO    -->
     <main>
-      <section id="side-bar">
+      <!--    HERO    -->
+
+      <section id="hero">
         <div class="container">
+          <!--    side bar    -->
           <div class="side-bar">
             <ul>
               <li class="menu-soc-item">
-                <a href="">Instagram</a>
+                <a class="soc-link" href="">Instagram</a>
               </li>
               <li class="menu-soc-item">
-                <a href="">Youtube</a>
+                <a class="soc-link" href="">Youtube</a>
               </li>
             </ul>
           </div>
-        </div>
-      </section>
-      <section id="hero">
-        <div class="container">
+
+          <!--    hero    -->
           <div class="hero">
-            <p class="hero-label" lang="en">A hair salon for men in Kyiv</p>
+            <p class="title-label" lang="en">A hair salon for men in Kyiv</p>
             <h1 class="hero-title">BarberShop</h1>
             <p class="hero-comment">
               Ми експерти у модних чоловічих стрижках. Працюємо швидко, обережно
               та зі смаком.
             </p>
-            <ul>
-              <li><button class="slide-btn" type="button">Вперед</button></li>
-              <li><button class="slide-btn" type="button">Назад</button></li>
+            <ul class="slider">
+              <li>
+                <button class="slide-btn left disabled" type="button">
+                  Наза <br />д
+                </button>
+              </li>
+              <li>
+                <button class="slide-btn right" type="button">
+                  Впере <br />д
+                </button>
+              </li>
             </ul>
           </div>
         </div>
@@ -139,43 +150,51 @@
     <section id="about">
       <div class="container">
         <div class="about">
-          <ul class="about-list">
-            <li>
-              <img
-                src="./images/about-img1-min.jpg"
-                alt="Барбер працює з клієнтом"
-              />
-            </li>
-            <li>
-              <img
-                src="./images/about-img2-min.jpg"
-                alt="Барбер працює з клієнтом"
-              />
-            </li>
-          </ul>
-          <p class="about-label">Про нас</p>
-          <h1 class="about-title">Кращий Барбершоп твого міста</h1>
-          <p class="about-comment">
-            Якщо ти хочеш додати в свій образ більше впевненості – тобі точно до
-            нас.
-          </p>
-          <p class="about-description">
-            Ми команда, котра ніколи не зупиняється на досягнутому і жадає змін.
-            І коли ти потрапиш до рук нашого майстра, то вже ніколи не зможеш
-            бути тим самим. Ми команда, яка завжди з клієнтами "на однієї
-            хвилі". Тому ми завжди готові вдосконалити кожного, хто до нас
-            приходить!
-          </p>
-          <button class="btn" type="button">онлайн-запис</button>
+          <div>
+            <ul class="about-list">
+              <li class="about-item">
+                <img
+                  class="about-img"
+                  src="./images/about-img1-min.jpg"
+                  alt="Барбер працює з клієнтом"
+                />
+              </li>
+              <li class="about-item">
+                <img
+                  class="about-img"
+                  src="./images/about-img2-min.jpg"
+                  alt="Барбер працює з клієнтом"
+                />
+              </li>
+            </ul>
+          </div>
+          <div class="about-description">
+            <p class="title-label">Про нас</p>
+            <h1 class="about-title">Кращий Барбершоп твого міста</h1>
+            <p class="about-comment">
+              Якщо ти хочеш додати в свій образ більше впевненості – тобі точно
+              до нас.
+            </p>
+            <p class="about-description">
+              Ми команда, котра ніколи не зупиняється на досягнутому і жадає
+              змін. І коли ти потрапиш до рук нашого майстра, то вже ніколи не
+              зможеш бути тим самим. Ми команда, яка завжди з клієнтами "на
+              однієї хвилі". Тому ми завжди готові вдосконалити кожного, хто до
+              нас приходить!
+            </p>
+            <button class="btn about-btn" type="button">онлайн-запис</button>
+          </div>
         </div>
       </div>
     </section>
+
     <!--    PRICES    -->
+
     <section id="prices">
       <div class="container">
         <div class="prices">
-          <p class="pricese-label">Проведи час у компанії найкращих майстрів</p>
-          <h2 class="prices-title">Ціни та послуги</h2>
+          <p class="title-label">Проведи час у компанії найкращих майстрів</p>
+          <h2 class="title">Ціни та послуги</h2>
           <ul class="prices-list">
             <li class="prices-item">
               <p class="prices-cut">Чоловіча стрижка</p>
@@ -217,7 +236,7 @@
     <!--    STATISTICS    -->
     <section id="statistics">
       <div class="container">
-        <div>
+        <div class="statistics">
           <ul>
             <li>
               <p>600 Задоволених клиєнтів на день</p>
@@ -232,8 +251,8 @@
               <p>100 Подарунків постійним клієнтам</p>
             </li>
           </ul>
-          <p class="sratistics-label">стара традиційна школа</p>
-          <h2 class="sratistics-title">Чому приходять саме до нас?</h2>
+          <p class="title-label">стара традиційна школа</p>
+          <h2 class="title">Чому приходять саме до нас?</h2>
           <p class="sratistics-comment">
             Про нас говорять тільки хороше. Але краще 1 раз побачити и відчути,
             аніж 10 разів прочитати.
@@ -244,33 +263,36 @@
     <!--    TEAM    -->
     <section id="team">
       <div class="container">
-        <div>
-          <p class="team-label">для справжніх поціновувачів атмосфери</p>
-          <h2 class="team-title">Наші майстри</h2>
-          <ul>
-            <li>
+        <div class="team">
+          <p class="title-label">для справжніх поціновувачів атмосфери</p>
+          <h2 class="title">Наші майстри</h2>
+          <ul class="team-list">
+            <li class="team-item">
               <img
+                class="team-image"
                 src="./images/barbers1-mini.jpg"
                 alt="Фото майстра John Smith"
               />
-              <h3>John Smith</h3>
-              <p>Extreme Barber</p>
+              <h3 class="team-name">John Smith</h3>
+              <p class="team-description">Extreme Barber</p>
             </li>
-            <li>
+            <li class="team-item">
               <img
+                class="team-image"
                 src="./images/barbers2-mini.jpg"
                 alt="Фото майстра Michele Doe"
               />
-              <h3>Michele Doe</h3>
-              <p>Extreme Barber</p>
+              <h3 class="team-name">Michele Doe</h3>
+              <p class="team-description">Extreme Barber</p>
             </li>
-            <li>
+            <li class="team-item">
               <img
+                class="team-image"
                 src="./images/barbers3-mini.jpg"
                 alt="Фото майстра Alan Black"
               />
-              <h3>Alan Black</h3>
-              <p>Extreme Barber</p>
+              <h3 class="team-name">Alan Black</h3>
+              <p class="team-description">Extreme Barber</p>
             </li>
           </ul>
         </div>
@@ -279,30 +301,34 @@
     <!--    GALLERY    -->
     <section>
       <div class="container">
-        <div>
-          <p class="gallery-label">Латинською мовою “барба” означає “борода”</p>
+        <div class="gallery">
+          <p class="title-label">Латинською мовою “барба” означає “борода”</p>
           <h2 class="visually-hidden">Галерея</h2>
-          <ul>
-            <li>
+          <ul class="gallary-list">
+            <li class="gallary-item">
               <img
+                class="gallary-image"
                 src="./images/gallery-photo1-min.jpg"
                 alt="Ілюстрація роботи майстрів 1"
               />
             </li>
-            <li>
+            <li class="gallary-item">
               <img
+                class="gallary-image"
                 src="./images/gallery-photo2-min.jpg"
                 alt="Ілюстрація роботи майстрів 2"
               />
             </li>
-            <li>
+            <li class="gallary-item">
               <img
+                class="gallary-image"
                 src="./images/gallery-photo3-min.jpg"
                 alt="Ілюстрація роботи майстрів 3"
               />
             </li>
-            <li>
+            <li class="gallary-item">
               <img
+                class="gallary-image"
                 src="./images/gallery-photo4-min.jpg"
                 alt="Ілюстрація роботи майстрів 4"
               />
@@ -314,24 +340,38 @@
 
     <!--    CONTACTS    -->
     <section id="contacts">
-      <div class="container">
-        <div>
-          <h2>Онлайн-запис</h2>
+      <div class="container contacts-container">
+        <div class="reserve">
+          <h2 class="title">Онлайн-запис</h2>
           <button class="btn">Відправити</button>
         </div>
         <div class="contacts">
-          <h2>Контакти</h2>
-          <address class="address">
-            <ul>
-              <li><a href="">вул. Васильківська, 7А Київ, 08132</a></li>
-              <li><a href="tel:380441111111">+38 044 111 11 11</a></li>
-              <li>
-                <a href="mailto:barbershop@email.com">barbershop@email.com</a>
-              </li>
-            </ul>
-          </address>
-          <strong>Час роботи</strong>
-          <p>Щоденно з 9:00 до 22:00</p>
+          <h2 class="title">Контакти</h2>
+          <div class="contacts-info">
+            <address class="address">
+              <ul>
+                <li>
+                  <a class="address-link" href=""
+                    >вул. Васильківська, 7А Київ, 08132</a
+                  >
+                </li>
+                <li>
+                  <a class="address-link" href="tel:380441111111"
+                    >+38 044 111 11 11</a
+                  >
+                </li>
+                <li>
+                  <a class="address-link" href="mailto:barbershop@email.com"
+                    >barbershop@email.com</a
+                  >
+                </li>
+              </ul>
+            </address>
+            <div>
+              <strong class="title-label">Час роботи</strong>
+              <p class="work-time">Щоденно з 9:00 до 22:00</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -339,14 +379,14 @@
     <!--    FOOTER    -->
     <section>
       <div class="container">
-        <div>
-          <p>&copy; Copyright 2020</p>
+        <div class="footer">
+          <p class="copyright">&copy; Copyright 2020</p>
           <ul>
             <li class="menu-soc-item">
-              <a href="">Instagram</a>
+              <a class="soc-link" href="">Instagram</a>
             </li>
             <li class="menu-soc-item">
-              <a href="">Youtube</a>
+              <a class="soc-link" href="">Youtube</a>
             </li>
           </ul>
         </div>

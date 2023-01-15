@@ -5,14 +5,8 @@
   display: none;
 }
 
-.about-label {
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
+.about .title-label {
   color: $text-color-main;
-  margin-bottom: 20px;
 }
 
 .about-title {
@@ -39,16 +33,68 @@
   color: $text-color-on-light;
   margin-bottom: 40px;
 }
+.about-btn {
+  color: $text-color-main;
+}
 
 @media screen and (min-width: 768px) {
+  .about {
+    display: flex;
+    padding: 100px 0;
+  }
+
+  .about-description {
+    width: 330px;
+  }
+
   .about-list {
     display: flex;
     flex-direction: column;
+    margin-right: 30px;
+  }
+
+  .about-item:first-child {
+    margin-bottom: 30px;
+  }
+
+  .about-img {
+    width: 330px;
+    height: 235px;
   }
 }
 
 @media screen and (min-width: 1200px) {
+  .about {
+    padding: 130px 0;
+  }
+
   .about-description {
+    width: 500px;
     margin-bottom: 42px;
+  }
+
+  .about-title {
+    font-size: 42px;
+    line-height: 1.16;
+  }
+
+  .about-comment {
+    font-size: 18px;
+    line-height: 1.66;
+  }
+
+  .about-list {
+    flex-direction: row;
+  }
+  .about-item:first-child {
+    margin-right: 30px;
+  }
+  .about-item:last-child {
+    margin-right: 64px;
+  }
+
+  .about-img {
+    width: 270px;
+    height: 445px;
   }
 }

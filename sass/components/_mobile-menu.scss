@@ -123,14 +123,6 @@
   color: $text-color-main;
 }
 
-.mobile-menu-soc {
-  font-family: "Open Sans";
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 1.3;
-  letter-spacing: 0.2em;
-  color: $text-color-main;
-}
 .mobile-menu-soc-item:not(:last-child) {
   margin-bottom: 24px;
 }
@@ -141,4 +133,8 @@
   line-height: 1.35;
   letter-spacing: 0.2em;
   color: $text-color-main;
+}
+.mobile-menu-soc-link:hover,
+.mobile-menu-soc-link:focus {
+  color: $accent-color;
 }

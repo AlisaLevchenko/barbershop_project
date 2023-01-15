@@ -1,0 +1,21 @@
+.statistics {
+  padding: 84px 0;
+}
+.statistics .title-label {
+  color: $text-color-main;
+}
+
+.statistics .title {
+  color: $text-color-main;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .statistics {
+    padding: 100px 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .statistics {
+    padding: 130px 0;
+  }
+}
