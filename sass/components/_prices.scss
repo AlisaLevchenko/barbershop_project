@@ -1,5 +1,11 @@
 #prices {
-  background: $bg-color-dark;
+  background-color: #111319;
+  background-image: url(../../images/price-img.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
 .prices {
@@ -9,6 +15,9 @@
 .prices .title-label {
   color: rgba(157, 164, 189, 0.6);
 }
+.prices .title-label::before {
+  background-color: rgba(157, 164, 189, 0.6);
+}
 
 .prices .title {
   color: #ffffff;
@@ -17,7 +26,9 @@
 .prices-list {
   padding: 30px 0;
   margin-bottom: 50px;
-  background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+  background-color: #111319;
+
+  // background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
 }
 
 .prices-item {
@@ -28,17 +39,17 @@
   letter-spacing: 0.02em;
   color: $text-color-on-dark;
   margin-bottom: 20px;
+  padding: 0 30px;
 }
 
 .prices .btn {
   margin: 0 auto;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 720px) {
   .prices-item {
     font-size: 18px;
     line-height: 1.66;
-    padding: 0 40px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -55,6 +66,7 @@
 
   .prices-item {
     width: 50%;
+    padding: 0 40px;
   }
   .prices-item:nth-child(4n) {
     margin-bottom: 0;

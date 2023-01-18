@@ -59,6 +59,15 @@ strong {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+.title-label::before {
+  content: "";
+  width: 60px;
+  height: 1px;
+  margin-right: 20px;
+  background-color: $text-color-main;
 }
 
 .title {
@@ -101,7 +110,7 @@ strong {
 //   color: $accent-color;
 // }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 720px) {
   // .btn {
   // margin-bottom: 84px;
   // }

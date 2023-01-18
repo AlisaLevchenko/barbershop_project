@@ -1,5 +1,8 @@
 .footer {
   padding: 44px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .copyright {
@@ -9,6 +12,24 @@
   letter-spacing: 0.2em;
   color: $text-color-on-dark;
 }
+
+.footer-soc-list {
+  display: flex;
+  align-items: center;
+}
+
+.footer-soc-list::before {
+  content: "";
+  width: 60px;
+  height: 1px;
+  margin-right: 40px;
+  background-color: $text-color-main;
+}
+
+.footer .menu-soc-item:not(:last-child) {
+  margin-right: 40px;
+}
+
 .footer .soc-link {
   color: $text-color-main;
 }
@@ -18,7 +39,7 @@
   color: $accent-color;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 720px) {
   .footer {
     padding: 56px 0;
   }

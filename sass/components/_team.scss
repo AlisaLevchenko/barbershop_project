@@ -41,13 +41,12 @@
   color: $accent-color;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 720px) {
   .team {
     padding: 100px 0;
   }
 
   .team-image {
-    // margin: 0 auto;
     width: 450px;
     height: 346px;
   }

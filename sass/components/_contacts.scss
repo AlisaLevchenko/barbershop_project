@@ -8,7 +8,7 @@
 
 .reserve {
   padding: 84px 0;
-  background-color: black;
+  background-color: $bg-color-dark;
 }
 
 .reserve .title {
@@ -17,7 +17,8 @@
 
 .contacts {
   padding: 84px 0;
-  background-color: rgb(49, 49, 49);
+  background-color: $bg-color-dark;
+  background-image: url(../../images/contact-img.png);
 }
 
 .contacts .title {
@@ -33,17 +34,39 @@
 .address-link {
   color: $text-color-on-dark;
 }
+
+.mail {
+  text-decoration: underline;
+}
+
+.contacts .title-label {
+  color: white;
+}
+
+.contacts .title-label::before {
+  background-color: rgba(157, 164, 189, 0.4);
+}
+
 .work-time {
   color: $text-color-on-dark;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 720px) {
   .contacts-info {
     display: flex;
   }
 }
 
 @media screen and (min-width: 1200px) {
+  .reserve {
+    padding: 130px 0;
+    width: 50%;
+  }
+
+  .contacts {
+    padding: 130px 0;
+    padding-left: 100px;
+  }
   .contacts-container {
     display: flex;
   }
