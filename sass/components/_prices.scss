@@ -26,9 +26,7 @@
 .prices-list {
   padding: 30px 0;
   margin-bottom: 50px;
-  background-color: #111319;
-
-  // background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+  background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
 }
 
 .prices-item {
@@ -38,8 +36,11 @@
   line-height: 2.14;
   letter-spacing: 0.02em;
   color: $text-color-on-dark;
-  margin-bottom: 20px;
   padding: 0 30px;
+}
+
+.prices-item:not(:last-child) {
+  margin-bottom: 20px;
 }
 
 .prices .btn {
@@ -62,6 +63,30 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    background: transparent;
+    position: relative;
+    z-index: 10;
+  }
+  .prices-list::before {
+    content: "";
+    display: block;
+    width: 50%;
+    height: 240px;
+    position: absolute;
+    background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+    top: 0;
+    z-index: -10;
+  }
+  .prices-list::after {
+    content: "";
+    display: block;
+    width: 50%;
+    height: 240px;
+    position: absolute;
+    background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+    top: 0;
+    right: 0;
+    z-index: -10;
   }
 
   .prices-item {

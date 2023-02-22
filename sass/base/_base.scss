@@ -95,7 +95,12 @@ strong {
   border-radius: 25px;
   cursor: pointer;
   color: #fff;
-  // color: $text-color-main;
+  transition: $animation-bg;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: $accent-color;
 }
 
 .soc-link {
