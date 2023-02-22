@@ -444,11 +444,12 @@ strong {
     flex-basis: 97px;
     display: flex;
     background-color: #ffffff;
+    position: relative;
   }
   .side-bar-list {
     display: flex;
     position: absolute;
-    bottom: 140px;
+    bottom: 180px;
     max-width: 97px;
     justify-content: flex-start;
     align-items: center;
