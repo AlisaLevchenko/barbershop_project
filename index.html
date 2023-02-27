@@ -237,26 +237,44 @@
     <section id="statistics">
       <div class="container">
         <div class="statistics">
-          <ul>
-            <li>
-              <p>600 Задоволених клиєнтів на день</p>
-            </li>
-            <li>
-              <p>50 Нагород за відмінний сервис</p>
-            </li>
-            <li>
-              <p>20 Кращих мастерів Києва</p>
-            </li>
-            <li>
-              <p>100 Подарунків постійним клієнтам</p>
-            </li>
-          </ul>
-          <p class="title-label">стара традиційна школа</p>
-          <h2 class="title">Чому приходять саме до нас?</h2>
-          <p class="sratistics-comment">
-            Про нас говорять тільки хороше. Але краще 1 раз побачити и відчути,
-            аніж 10 разів прочитати.
-          </p>
+          <div class="statistics-info">
+            <ul class="statistics-list">
+              <li class="statistics-item">
+                <p class="statistics-item-quantity">600</p>
+                <p class="statistics-item-plus">+</p>
+                <p class="statistics-item-description">
+                  Задоволених клиєнтів на день
+                </p>
+              </li>
+              <li class="statistics-item">
+                <p class="statistics-item-quantity">20</p>
+                <p class="statistics-item-plus tenth">+</p>
+                <p class="statistics-item-description">Кращих мастерів Києва</p>
+              </li>
+              <li class="statistics-item">
+                <p class="statistics-item-quantity">50</p>
+                <p class="statistics-item-plus tenth">+</p>
+                <p class="statistics-item-description">
+                  Нагород за відмінний сервис
+                </p>
+              </li>
+              <li class="statistics-item">
+                <p class="statistics-item-quantity">100</p>
+                <p class="statistics-item-plus">+</p>
+                <p class="statistics-item-description">
+                  Подарунків постійним клієнтам
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="statistics-description">
+            <p class="title-label">стара традиційна школа</p>
+            <h2 class="title">Чому приходять саме до нас?</h2>
+            <p class="sratistics-comment">
+              Про нас говорять тільки хороше. Але краще 1 раз побачити и
+              відчути, аніж 10 разів прочитати.
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -442,27 +460,52 @@
 
     <!--    CONTACTS    -->
     <section id="contacts">
+      <div class="reserve-bg"></div>
+      <div class="contacts-bg"></div>
       <div class="container contacts-container">
         <div class="reserve">
           <h2 class="title">Онлайн-запис</h2>
-          <button class="btn">Відправити</button>
+          <form action="" autocomplete="true">
+            <label for="name"></label>
+            <input
+              class="form-input"
+              type="text"
+              id="name"
+              placeholder="імʼя*"
+            />
+            <label for="phone"></label>
+            <input
+              class="form-input"
+              type="text"
+              id="phone"
+              placeholder="телефон*"
+            />
+            <label for="comment"></label>
+            <input
+              class="form-input message-input"
+              type="text"
+              id="comment"
+              placeholder="повідомлення"
+            />
+            <button class="btn">Відправити</button>
+          </form>
         </div>
         <div class="contacts">
           <h2 class="title">Контакти</h2>
           <div class="contacts-info">
             <address class="address">
-              <ul>
-                <li>
+              <ul class="address-list">
+                <li class="address-item">
                   <a class="address-link" href=""
                     >вул. Васильківська, 7А Київ, 08132</a
                   >
                 </li>
-                <li>
+                <li class="address-item">
                   <a class="address-link" href="tel:380441111111"
                     >+38 044 111 11 11</a
                   >
                 </li>
-                <li>
+                <li class="address-item">
                   <a
                     class="address-link mail"
                     href="mailto:barbershop@email.com"
