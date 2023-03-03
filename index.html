@@ -240,27 +240,31 @@
           <div class="statistics-info">
             <ul class="statistics-list">
               <li class="statistics-item">
-                <p class="statistics-item-quantity">600</p>
-                <p class="statistics-item-plus">+</p>
+                <p class="statistics-item-quantity">
+                  600 <span class="statistics-item-plus">+</span>
+                </p>
                 <p class="statistics-item-description">
                   Задоволених клиєнтів на день
                 </p>
               </li>
               <li class="statistics-item">
-                <p class="statistics-item-quantity">20</p>
-                <p class="statistics-item-plus tenth">+</p>
+                <p class="statistics-item-quantity">
+                  20 <span class="statistics-item-plus tenth">+</span>
+                </p>
                 <p class="statistics-item-description">Кращих мастерів Києва</p>
               </li>
               <li class="statistics-item">
-                <p class="statistics-item-quantity">50</p>
-                <p class="statistics-item-plus tenth">+</p>
+                <p class="statistics-item-quantity">
+                  50 <span class="statistics-item-plus tenth">+</span>
+                </p>
                 <p class="statistics-item-description">
                   Нагород за відмінний сервис
                 </p>
               </li>
               <li class="statistics-item">
-                <p class="statistics-item-quantity">100</p>
-                <p class="statistics-item-plus">+</p>
+                <p class="statistics-item-quantity">
+                  100 <span class="statistics-item-plus">+</span>
+                </p>
                 <p class="statistics-item-description">
                   Подарунків постійним клієнтам
                 </p>
@@ -271,7 +275,7 @@
             <p class="title-label">стара традиційна школа</p>
             <h2 class="title">Чому приходять саме до нас?</h2>
             <p class="sratistics-comment">
-              Про нас говорять тільки хороше. Але краще 1 раз побачити и
+              Про нас говорять тільки хороше. Але краще один раз побачити і
               відчути, аніж 10 разів прочитати.
             </p>
           </div>
@@ -465,29 +469,36 @@
       <div class="container contacts-container">
         <div class="reserve">
           <h2 class="title">Онлайн-запис</h2>
-          <form action="" autocomplete="true">
-            <label for="name"></label>
+          <form class="reserve-form" autocomplete="true">
             <input
-              class="form-input"
+              class="form-input form-input-name"
+              name="userName"
               type="text"
               id="name"
-              placeholder="імʼя*"
+              minlength="2"
+              placeholder="ІМʼЯ*"
+              required
             />
-            <label for="phone"></label>
+
             <input
               class="form-input"
-              type="text"
+              name="userPhone"
+              type="tel"
               id="phone"
-              placeholder="телефон*"
+              placeholder="ТЕЛЕФОН*"
+              required
             />
-            <label for="comment"></label>
-            <input
+
+            <textarea
               class="form-input message-input"
+              name="feedback"
               type="text"
+              rows="5"
               id="comment"
-              placeholder="повідомлення"
-            />
-            <button class="btn">Відправити</button>
+              placeholder="ПОВІДОМЛЕННЯ"
+            ></textarea>
+
+            <button class="btn" type="submit">Відправити</button>
           </form>
         </div>
         <div class="contacts">

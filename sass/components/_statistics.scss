@@ -15,16 +15,23 @@
 .statistics-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .statistics-item {
   position: relative;
   background-color: $bg-color-secondry;
-  width: 193px;
+  width: 194px;
   height: 133px;
   padding: 20px;
+}
+.statistics-item:nth-child(odd) {
   margin-right: 30px;
   margin-bottom: 30px;
+}
+
+.statistics-item:nth-child(even) {
+  margin-top: 30px;
 }
 
 .statistics-item-quantity {
@@ -38,15 +45,15 @@
 
 .statistics-item-plus {
   position: absolute;
-  top: 27px;
-  right: 37px;
+  top: 26px;
+  right: 41px;
   color: $accent-color;
   font-weight: 600;
   font-size: 16px;
   line-height: 1.37;
 }
 .statistics-item-plus.tenth {
-  right: 50px;
+  right: 54px;
 }
 
 .statistics-item-description {
@@ -58,13 +65,37 @@
   width: 130px;
 }
 
+.sratistics-comment {
+  font-size: 18px;
+  line-height: 1.66;
+  letter-spacing: 0.02em;
+  color: $text-color-on-light;
+  margin-bottom: 44px;
+}
+
 @media screen and (min-width: 720px) {
   .statistics {
     padding: 100px 0;
   }
 
+  .statistics-list {
+    width: 450px;
+    justify-content: flex-end;
+  }
+
   .statistics-item {
     width: 210px;
+  }
+
+  .statistics-item-plus {
+    right: 37px;
+  }
+  .statistics-item-plus.tenth {
+    right: 50px;
+  }
+
+  .statistics-description {
+    width: 450px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -77,8 +108,19 @@
     width: 50%;
   }
 
+  .statistics-list {
+    margin: 0 92px;
+  }
+
   .statistics-item {
     width: 170px;
+  }
+
+  .statistics-item-plus {
+    right: 37px;
+  }
+  .statistics-item-plus.tenth {
+    right: 50px;
   }
 
   .statistics-description {
