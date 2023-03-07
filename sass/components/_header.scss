@@ -6,7 +6,6 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
   padding: 40px 0;
 }
 
@@ -15,6 +14,7 @@
   height: 55px;
   background-image: url(../../images/logoBS.png);
   background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .navigation-list {
@@ -50,8 +50,10 @@
   }
 
   .logo-link {
-    margin-right: 60px;
-    background-image: url(../../images/logoDark.svg);
+    margin-right: 40px;
+    margin-left: 15px;
+    min-width: 65px;
+    background-image: url(../../images/logoDark.png);
   }
 
   .navigation-list {
@@ -68,6 +70,7 @@
   }
 
   .header-contact {
+    padding-top: 17px;
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
@@ -92,6 +95,7 @@
   .header-btn {
     display: flex;
     justify-content: center;
+    margin-bottom: 20px;
   }
 }
 
@@ -107,6 +111,10 @@
   .header-contact {
     flex-direction: row;
     margin-left: auto;
+    padding-top: 0;
+  }
+  .header-btn {
+    margin-bottom: 0;
   }
 
   .address {

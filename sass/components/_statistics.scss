@@ -78,6 +78,10 @@
     padding: 100px 0;
   }
 
+  .statistics-info {
+    padding-left: 235px;
+  }
+
   .statistics-list {
     width: 450px;
     justify-content: flex-end;
@@ -95,7 +99,7 @@
   }
 
   .statistics-description {
-    width: 450px;
+    width: 455px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -105,7 +109,8 @@
   }
 
   .statistics-info {
-    width: 50%;
+    padding-left: 0;
+    // width: 50%;
   }
 
   .statistics-list {

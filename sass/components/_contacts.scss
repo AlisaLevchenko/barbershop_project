@@ -35,6 +35,15 @@
   margin: 0 auto;
 }
 
+.contacts {
+  padding: 84px 0;
+}
+
+.contacts .title {
+  color: white;
+  text-align: center;
+}
+
 .form-input {
   padding: 0 0 8px 0;
   display: inline-block;
@@ -51,6 +60,11 @@
 .form-input::placeholder {
   color: rgba(157, 164, 189, 0.4);
   transition: $animation-color;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
 }
 
 .form-input:hover,
@@ -66,13 +80,8 @@
   width: 100%;
 }
 
-.contacts {
-  padding: 84px 0;
-}
-
-.contacts .title {
-  color: white;
-  text-align: center;
+.reserve .btn {
+  margin: 0 auto;
 }
 
 .address {
@@ -88,11 +97,19 @@
 }
 
 .address-link {
+  display: flex;
   color: $text-color-on-dark;
 }
 
 .address-item:not(:last-child) {
   margin-bottom: 20px;
+}
+
+.contact-icon {
+  width: 18px;
+  height: 18px;
+  margin-right: 15px;
+  margin-top: 7px;
 }
 
 .mail {
@@ -145,14 +162,21 @@
     display: flex;
   }
 
+  .reserve .btn {
+    margin: 0;
+  }
+
   .address {
-    width: 50%;
+    width: 345px;
   }
 
   .address-list {
     margin-right: 30px;
-    width: 230px;
   }
+
+  // .schedule {
+  //   margin-left: 20px;
+  // }
 }
 
 @media screen and (min-width: 1200px) {

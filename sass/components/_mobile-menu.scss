@@ -13,7 +13,7 @@
   padding: 0;
   border: none;
   // border-color: inherit;
-  background-image: url(../../images/menu.svg);
+  background-image: url(../../images/svg/menu.svg);
   background-color: transparent;
   cursor: pointer;
 
@@ -26,7 +26,7 @@
     top: 48px;
     right: 31px;
     z-index: 100;
-    background-image: url(../../images/close_menu.svg);
+    background-image: url(../../images/svg/close_menu.svg);
     background-color: transparent;
   }
 }
