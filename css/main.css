@@ -193,11 +193,9 @@ strong {
 
 @media screen and (min-width: 720px) {
   .header {
-    justify-content: normal;
     padding: 32px 0;
   }
   .logo-link {
-    margin-right: 40px;
     margin-left: 15px;
     min-width: 65px;
     background-image: url(../../images/logoDark.png);
@@ -213,13 +211,13 @@ strong {
     padding: 20px 0;
   }
   .header-contact {
-    padding-top: 17px;
+    padding-top: 8px;
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
   }
-  .address {
+  .header-address {
     font-style: normal;
     text-align: center;
   }
@@ -254,7 +252,7 @@ strong {
   .header-btn {
     margin-bottom: 0;
   }
-  .address {
+  .header-address {
     margin-right: 40px;
   }
   .navigation-item:not(:last-child) {
@@ -999,6 +997,16 @@ strong {
   margin-bottom: 44px;
 }
 
+.gallary-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gallary-item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
 .gallary-image {
   width: 418px;
   height: 360px;
@@ -1018,6 +1026,9 @@ strong {
   .gallary-item {
     margin-top: 30px;
     margin-left: 30px;
+  }
+  .gallary-item:not(:last-child) {
+    margin-bottom: 0;
   }
   .gallary-image {
     width: 330px;
